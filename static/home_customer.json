@@ -1,0 +1,60 @@
+{
+    "message": "",
+    "code": 1000,
+    "result": {
+        "delivery": "5",
+        "sleep": "0",
+        "items": [
+            {
+                "id": 1,
+                "number": "A11233",
+                "name": "红旗连锁",
+                "type": 1,
+                "location": {
+                    "longitude": 104.066704,
+                    "latitude": 30.5516
+                }
+            },
+            {
+                "id": 2,
+                "number": "A14442",
+                "name": "大风吹",
+                "type": 1,
+                "location": {
+                    "longitude": 104.003799,
+                    "latitude": 30.5681
+                }
+            },
+            {
+                "id": 3,
+                "number": "A14443",
+                "name": "好又多",
+                "type": 1,
+                "location": {
+                    "longitude": 104.069786,
+                    "latitude": 30.501692
+                }
+            },
+            {
+                "id": 4,
+                "number": "A11232",
+                "name": "舞东风",
+                "type": 1,
+                "location": {
+                    "longitude": 104.053207,
+                    "latitude": 30.629875
+                }
+            },
+            {
+                "id": 5,
+                "number": "A11232333",
+                "name": "OMGSSSS",
+                "type": 1,
+                "location": {
+                    "longitude": 104.080986,
+                    "latitude": 30.657688
+                }
+            }
+        ]
+    }
+}

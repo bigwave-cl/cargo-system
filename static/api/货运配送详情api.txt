@@ -1,0 +1,38 @@
+//货运配送详情页面接口信息
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": {
+        "id": "配送单id",
+        "total": "订单数量（Number）",
+        "no_delivery": "未配送数量(Number)",
+        "delivery": "已配送数量(Number)",
+        "name": "配送单名称(String)",
+        "driver": "司机名称(String)",
+        "distance": "配送距离(String)ex:'89.6Km'",
+        "interval": "配送时长(String)格式待定ex:'9小时8分'",
+        "goods_num": "货物数量(Number)",
+        "order_time":"当前选择的日期(String)ex:'2017-02-12'",
+        "items": [
+            {
+                "order_id": "配送单订单id",
+                "name": "订单名称(String)",
+                "sort": "配送顺序(Number)",
+                "address": "订单详细地址(String)",
+                "state": "订单状态(Number)1-已配送，2-未配送",
+                "delivery_time": "订单设置的配送时间(String)ex:'15:30'",
+                "cargo_num": "送货数量(Number)",
+                "remarks": "备注(String)",
+                "location": {
+                    "longitude": "经度",
+                    "latitude": "纬度"
+                },
+                "already": {
+                    "arrival": "到达时间(String)ex:'08:13'",
+                    "departure": "离开时间(String)ex:'08:21'",
+                    "stop": "停留时间(String)ex:'8分钟'"
+                }
+            }
+        ]
+    }
+}

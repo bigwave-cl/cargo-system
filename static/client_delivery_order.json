@@ -1,0 +1,54 @@
+{
+    "message": "",
+    "code": 1000,
+    "result": [
+        {
+            "id": 1,
+            "name": "大配送单",
+            "driver": "老司机",
+            "distance": 300,
+            "interval": "2小时",
+            "goods_num": 40,
+            "total": "8",
+            "no_delivery": "7",
+            "delivery": "1",
+            "editable": true
+        },
+        {
+            "id": 2,
+            "name": "大配送单1",
+            "driver": "老司机",
+            "distance": 300,
+            "interval": "2小时",
+            "goods_num": 40,
+            "total": "0",
+            "no_delivery": "0",
+            "delivery": "0",
+            "editable": true
+        },
+        {
+            "id": 3,
+            "name": "大配送单2",
+            "driver": "老司机",
+            "distance": 300,
+            "interval": "2小时",
+            "goods_num": 40,
+            "total": "0",
+            "no_delivery": "0",
+            "delivery": "0",
+            "editable": true
+        },
+        {
+            "id": 4,
+            "name": "大配送单3",
+            "driver": "老司机",
+            "distance": 300,
+            "interval": "2小时",
+            "goods_num": 40,
+            "total": "0",
+            "no_delivery": "0",
+            "delivery": "0",
+            "editable": true
+        }
+    ]
+}

@@ -1,0 +1,272 @@
+.cgm-home {
+    .map-container {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .map-search {
+        position: absolute;
+        z-index: 12;
+        top: 3%;
+        left: 2.5%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 408px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        background-color: $cgm-bg-color-1;
+        -webkit-box-shadow: -2px 3px 3px $cgm-border-color-2;
+        -moz-box-shadow: -2px 3px 3px $cgm-border-color-2;
+        box-shadow: -2px 3px 3px $cgm-border-color-2;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row norwap;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -ms-flex-flow: row norwap;
+        flex-flow: row norwap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        &::before {
+            position: absolute;
+            z-index: 3;
+            top: 50%;
+            left: 8px;
+            display: block;
+            overflow: hidden;
+            width: 42px;
+            height: 34px;
+            content: '';
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            border-right: 1px solid $cgm-border-color-1;
+            background: no-repeat center/48% url($cgm-url-1+'icon_search.png') transparent;
+        }
+        .map-input {
+            font-size: 1.7rem;
+            line-height: 35px;
+            height: 34px;
+            margin: 0;
+            padding: 0 0 0 64px;
+            color: $cgm-font-color-1;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -moz-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            &::-webkit-input-placeholder {
+                /* WebKit browsers */
+                color: $cgm-font-color-1;
+            }
+            &:-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: $cgm-font-color-1;
+            }
+            &::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: $cgm-font-color-1;
+            }
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10+ */
+                color: $cgm-font-color-1;
+            }
+        }
+        .map-label {
+            font-size: 1.8rem;
+            line-height: 34px;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            height: 100%;
+            padding: 2.5% 0;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            text-align: center;
+            color: $cgm-font-color-2;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background-color: $cgm-color-1;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 0 80px;
+            -moz-box-flex: 0;
+            -ms-flex: 0 0 80px;
+            flex: 0 0 80px;
+            &::after {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: block;
+                overflow: hidden;
+                width: 0;
+                height: 0;
+                content: '';
+                cursor: pointer;
+                -webkit-transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                transition: all .3s ease-in;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, .1);
+            }
+            &:hover::after {
+                width: 120%;
+                padding: 60% 0;
+                -webkit-transition: all .3s ease-out;
+                -moz-transition: all .3s ease-out;
+                -o-transition: all .3s ease-out;
+                transition: all .3s ease-out;
+            }
+        }
+    }
+    .map-tag {
+        position: absolute;
+        z-index: 10;
+        top: 3%;
+        right: 2.5%;
+        left: 0;
+        height: 54px;
+        text-align: right;
+        white-space: nowrap;
+        pointer-events: none;
+        .map-count {
+            display: inline-block;
+            height: 100%;
+            margin-right: 5px;
+            padding: 0 14px;
+            vertical-align: middle;
+            pointer-events: auto;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background-color: $cgm-bg-color-1;
+            -webkit-box-shadow: 0 3px 3px $cgm-border-color-2;
+            -moz-box-shadow: 0 3px 3px $cgm-border-color-2;
+            box-shadow: 0 3px 3px $cgm-border-color-2;
+            li {
+                position: relative;
+                position: relative;
+                top: 50%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                float: left;
+                margin-left: 30px;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-flow: row nowrap;
+                -moz-box-orient: horizontal;
+                -moz-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -moz-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-align-content: center;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                &::after {
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: -14px;
+                    display: block;
+                    width: 0;
+                    height: 60%;
+                    content: '';
+                    -webkit-transform: translateY(-50%);
+                    -moz-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    border-left: 1px solid #ddd;
+                }
+                &:first-of-type {
+                    margin-left: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+                .icon {
+                    margin: 0 5px;
+                    -webkit-box-flex: 0;
+                    -webkit-flex: 0 0 auto;
+                    -moz-box-flex: 0;
+                    -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
+                    img {
+                        height: 50%;
+                        vertical-align: bottom;
+                    }
+                }
+                .text {
+                    text-align: center;
+                    -webkit-box-flex: 1;
+                    -webkit-flex: 1 1 auto;
+                    -moz-box-flex: 1;
+                    -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+                    span {
+                        font-size: 1.4rem;
+                        display: block;
+                        width: 100%;
+                    }
+                    span.num {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .map-close {
+            display: inline-block;
+            width: 54px;
+            height: 54px;
+            cursor: pointer;
+            vertical-align: middle;
+            pointer-events: auto;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: no-repeat center/60% url($cgm-url-1+'icon_cancel.png') $cgm-bg-color-1;
+            -webkit-box-shadow: 0 3px 3px $cgm-border-color-2;
+            -moz-box-shadow: 0 3px 3px $cgm-border-color-2;
+            box-shadow: 0 3px 3px $cgm-border-color-2;
+        }
+    }
+}

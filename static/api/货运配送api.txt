@@ -1,0 +1,66 @@
+//货运配送页面，地图订单接口信息
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": {
+        "total": "订单数量（Number）",
+        "no_delivery": "未配送数量(Number)",
+        "delivery": "已配送数量(Number)",
+        "list": [
+            {
+                "id": "用户id",
+                "name": "用户名称(String)",
+                "items": [
+                    {
+                        "order_id": "订单id",
+                        "name": "订单名称(String)",
+                        "address": "订单详细地址(String)",
+                        "state": "订单状态(Number)1-已配送，2-未配送",
+                        "delivery_time": "订单设置的配送时间(String)ex:'15:30'",
+                        "cargo_num": "送货数量(Number)",
+                        "remarks": "备注(String)",
+                        "location": {
+                            "longitude": "经度",
+                            "latitude": "纬度"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
+
+//货运配送页面，配送单接口信息
+
+//传递日期，返回结果
+//date?
+//返回结果的数据列表模型如下:
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": [
+        {
+            "id": "配送单id",
+            "name": "配送单名称(String)",
+            "driver": "司机名称(String)",
+            "distance": "配送距离(Number/String)ex:'89.6Km'",
+            "interval": "配送时长(String)格式待定ex:'9小时8分'",
+            "goods_num": "货物数量(Number)",
+            "total": "订单数量（Number）",
+            "no_delivery": "未配送数量(Number)",
+            "delivery": "已配送数量(Number)",
+            "editable" : "是否可编辑(Boolean),true-可编辑，false-不可编辑"
+        }
+    ]
+}
+
+//货运配送页面，配送单删除接口信息
+
+//传递id，返回操作结果
+//id?
+//返回结果的数据列表模型如下:
+
+{
+    "message": "接口信息",
+    "code": "返回码"
+}

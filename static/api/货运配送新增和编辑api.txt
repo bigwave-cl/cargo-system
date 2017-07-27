@@ -1,0 +1,116 @@
+//货运配送新增和编辑，地图订单接口信息
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": [
+        {
+            "id": "用户id",
+            "name": "用户名称(String)",
+            "items": [
+                {
+                    "order_id": "订单id",
+                    "name": "订单名称(String)",
+                    "address": "订单详细地址(String)",
+                    "delivery_time": "订单设置的配送时间(String)",
+                    "cargo_num": "送货数量(Number)",
+                    "remarks": "备注(String)",
+                    "location": {
+                        "longitude": "经度",
+                        "latitude": "纬度"
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+//货运配送新增和编辑，司机接口信息
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": [
+        {
+            "id": 1,
+            "driver": "王志来",
+            "tag": "今日限行",
+            "car_info": [
+                {
+                    "id": 1,
+                    "name": "车牌号",
+                    "value": "川AK47S"
+                },
+                {
+                    "id": 2,
+                    "name": "车型号",
+                    "value": "五菱宏光"
+                },
+                {
+                    "id": 3,
+                    "name": "车厢内空",
+                    "value": "4.5*1.5*1.2"
+                },
+                {
+                    "id": 4,
+                    "name": "车辆外箱",
+                    "value": "4.5*1.5*1.2"
+                }
+            ],
+            "goods_info": [
+                {
+                    "id": 1,
+                    "name": "烤肠",
+                    "value": "50件"
+                },
+                {
+                    "id": 2,
+                    "name": "冷冻豌豆",
+                    "value": "60件"
+                },
+                {
+                    "id": 3,
+                    "name": "冷冻玉米",
+                    "value": "60件"
+                },
+                {
+                    "id": 4,
+                    "name": "冷冻三丁",
+                    "value": "60件"
+                }
+            ]
+        }
+    ]
+}
+
+//货运配送编辑，侧滑导航栏接口信息
+
+//传递id，返回结果
+//id？
+//返回结果的数据列表模型如下:
+{}
+
+
+
+//货运配送新增和编辑，保存接口信息
+
+//传递新增或编辑信息，返回操作结果：
+//传递数据模型如下：
+{
+    "platform_id": "platformId",
+    "name": "配送单名字",
+    "distance": "配送距离km",
+    "interval": "配送时长(秒)",
+    "driver_id": "司机id",
+    "items": [
+        {
+            "order_id": "订单id",
+            "time": "配送时间(string)ex:15:30",
+            "distance": "上一个位置到本位置的距离km",
+            "interval": "上一个位置到本位置的所用时长（秒）"
+        }
+    ]
+}
+//返回结果的数据列表模型如下:
+{
+    "message": "接口信息",
+    "code": "返回码"
+}

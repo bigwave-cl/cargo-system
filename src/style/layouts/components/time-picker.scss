@@ -1,0 +1,126 @@
+.time-picker{
+	.time-label{
+		cursor: pointer;
+		-webkit-user-select:none;
+		   -moz-user-select:none;
+		    -ms-user-select:none;
+		        user-select:none;
+	}
+}
+.time-picker-box{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	max-width: 400px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	.ask-caption{
+		font-size: 2.4rem;
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+		color: $cgm-font-color-2;
+		padding: 20px 0;
+		background-color: $cgm-color-1;
+	}
+	.ask-picker{
+		width: 100%;
+		height: 280px;
+		background-color: $cgm-bg-color-1;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient:horizontal;
+		-webkit-box-direction:normal;
+		-webkit-flex-flow:row nowrap;
+		   -moz-box-orient:horizontal;
+		   -moz-box-direction:normal;
+		    -ms-flex-flow:row nowrap;
+		        flex-flow:row nowrap;
+		ul{
+			width: 100%;
+			li{
+				width: 100%;
+				font-size: 2rem;
+				text-align: center;
+				padding: 10px;
+				cursor:pointer;
+				-webkit-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				transition: all .3s linear;
+				&:hover{
+					background-color: $cgm-bg-color-2;
+					-webkit-transition: all .3s linear;
+					-o-transition: all .3s linear;
+					-moz-transition: all .3s linear;
+					transition: all .3s linear;
+				}
+				&.active{
+					background-color: $cgm-color-1;
+					color: $cgm-font-color-2;
+				}
+			}
+		}
+		.ask-hour-box{
+			-webkit-box-flex: 1;
+			-webkit-flex: 1 1 50%;
+			   -moz-box-flex: 1;
+			    -ms-flex: 1 1 50%;
+			        flex: 1 1 50%;
+			height: 100%;
+			overflow-x:hidden;
+			overflow-y:scroll;
+			&::-webkit-scrollbar {
+				width: 2px;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: $cgm-border-color-1;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $cgm-color-1;
+				-webkit-border-radius: 2px;
+				border-radius: 2px;
+			}
+		}
+		.ask-minute-box{
+			-webkit-box-flex: 1;
+			-webkit-flex: 1 1 50%;
+			   -moz-box-flex: 1;
+			    -ms-flex: 1 1 50%;
+			        flex: 1 1 50%;
+			height: 100%;
+			overflow-x:hidden;
+			overflow-y:scroll;
+			&::-webkit-scrollbar {
+				width: 2px;
+			}
+			&::-webkit-scrollbar-track {
+				background-color: $cgm-border-color-1;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: $cgm-color-1;
+				-webkit-border-radius: 2px;
+				border-radius: 2px;
+			}
+		}
+	}
+	.ask-operation{
+		padding: 10px;
+		background-color: $cgm-bg-color-1;
+		width: 100%;
+		text-align: right;
+		.ask-button{
+			display: inline-block;
+			&.sure{
+				background-color: $cgm-color-1;
+				color: $cgm-font-color-2;
+			}
+		}
+	}
+}

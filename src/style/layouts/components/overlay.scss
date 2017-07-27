@@ -1,0 +1,33 @@
+.bw-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    .overlay-fade2-transition {
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        &.overlay-fade2-enter,
+        &.overlay-fade2-leave {
+            opacity: 0 !important;
+        }
+    }
+}
+
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.overlay-fade-enter,
+.overlay-fade-leave-to {
+    opacity: 0
+}

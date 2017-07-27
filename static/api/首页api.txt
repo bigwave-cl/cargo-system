@@ -1,0 +1,43 @@
+//首页接口信息
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": {
+        "sleep": "沉睡客户数量（Number）ex:12",
+        "delivery": "送货客户数量(Number)ex:12",
+        "items": [
+            {
+                "id": "客户id",
+                "number": "客户编号(String)ex:A323",
+                "name": "客户名称(String)ex:中国什么",
+                "type": "客户类型(Number)1-送货客户，2-沉睡客户",
+                "location": {
+                    "longitude": "经度",
+                    "latitude": "纬度"
+                }
+            }
+        ]
+    }
+}
+
+//首页搜索接口信息
+
+//传递搜索信息，返回搜索结果
+//value?
+//返回结果的数据列表模型如下:
+{
+    "message": "接口信息",
+    "code": "返回码",
+    "result": [
+        {
+            "id": "客户id",
+            "number": "客户编号(String)",
+            "name": "客户名称(String)",
+            "type": "客户类型(Number)1-送货客户，2-沉睡客户",
+            "location": {
+                "longitude": "经度",
+                "latitude": "纬度"
+            }
+        }
+    ]
+}

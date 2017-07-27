@@ -1,0 +1,106 @@
+.ask-toast {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	max-width: 80%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding: 10px 20px;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	word-break: break-all;
+	.msg {
+		font-size: 1.6rem;
+		color: #fff;
+	}
+}
+
+.ask-toast-fade-leave-active {
+	-webkit-transition: opacity .5s, -webkit-transform .5s linear;
+	transition: opacity .5s, -webkit-transform .5s linear;
+	-o-transition: opacity .5s, transform .5s linear;
+	-moz-transition: opacity .5s, transform .5s linear, -moz-transform .5s linear;
+	transition: opacity .5s, transform .5s linear;
+	transition: opacity .5s, transform .5s linear, -webkit-transform .5s linear, -moz-transform .5s linear;
+	will-change: transform;
+}
+
+.ask-toast-fade-leave-to {
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%) scale(.8, .8);
+	-moz-transform: translate(-50%, -50%) scale(.8, .8);
+	-ms-transform: translate(-50%, -50%) scale(.8, .8);
+	transform: translate(-50%, -50%) scale(.8, .8);
+}
+.ask-toast-fade-enter-active{
+	-webkit-animation: ask-toast-twinkle .1s linear 1;
+	   -moz-animation: ask-toast-twinkle .1s linear 1;
+	        animation: ask-toast-twinkle .1s linear 1; 
+}
+
+@-webkit-keyframes ask-toast-twinkle{
+	0%{
+		left: 50%;
+	}
+	25%{
+		left: -webkit-calc(50% + 15px);
+		left: calc(50% + 15px);
+	}
+	50%{
+		left: 50%;
+	}
+	75%{
+		left: -webkit-calc(50% - 15px);
+		left: calc(50% - 15px);
+	}
+	100%{
+		left: 50%;
+	}
+}
+
+@-moz-keyframes ask-toast-twinkle{
+	0%{
+		left: 50%;
+	}
+	25%{
+		left: -moz-calc(50% + 15px);
+		left: calc(50% + 15px);
+	}
+	50%{
+		left: 50%;
+	}
+	75%{
+		left: -moz-calc(50% - 15px);
+		left: calc(50% - 15px);
+	}
+	100%{
+		left: 50%;
+	}
+}
+
+@keyframes ask-toast-twinkle{
+	0%{
+		left: 50%;
+	}
+	25%{
+		left: -webkit-calc(50% + 15px);
+		left: -moz-calc(50% + 15px);
+		left: calc(50% + 15px);
+	}
+	50%{
+		left: 50%;
+	}
+	75%{
+		left: -webkit-calc(50% - 15px);
+		left: -moz-calc(50% - 15px);
+		left: calc(50% - 15px);
+	}
+	100%{
+		left: 50%;
+	}
+}
