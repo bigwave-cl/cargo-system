@@ -102,7 +102,7 @@ export default {
             // });
             self.editDriver.selectId = 1;
             self.editDriver.driver = '王建来';
-            self.choseList = [{"order_id":4,"name":"好又多6","address":"四川省成都市天府新区维也纳森林公园","state":2,"delivery_time":"13:32","cargo_num":30,"remarks":"","location":{"longitude":104.069786,"latitude":30.501692},"ischecked":true,"distance":18009,"sort":2,"interval":2887},{"order_id":2,"name":"红旗连锁","address":"四川省成都市高新区天府大道天府二街138号","state":1,"delivery_time":"13:32","cargo_num":30,"remarks":"","location":{"longitude":104.066704,"latitude":30.5516},"ischecked":true,"distance":6122,"sort":2,"interval":963},{"order_id":7,"name":"大风吹2","address":"四川省成都市双流区西航港街道黄河中路36号","state":2,"delivery_time":"17:42","cargo_num":10,"remarks":"sssss","location":{"longitude":104.012799,"latitude":30.5881},"ischecked":true,"distance":10327,"sort":2,"interval":2337}];
+            self.choseList = [{"order_id":2,"name":"红旗连锁","address":"四川省成都市高新区天府大道天府二街138号","state":1,"delivery_time":"13:32-14:32","cargo_num":30,"remarks":"","location":{"longitude":104.066704,"latitude":30.5516},"ischecked":true,"distance":12636,"sort":3,"interval":2020},{"order_id":8,"name":"好又多","address":"四川省成都市天府新区维也纳森林公园","state":2,"delivery_time":"13:34","cargo_num":30,"remarks":"","location":{"longitude":104.2,"latitude":30.501692},"ischecked":true,"distance":17255,"sort":5,"interval":2761},{"order_id":6,"name":"OMGSSSS","address":"四川省成都市锦江区妇幼","state":2,"delivery_time":"13:32~15:36","cargo_num":30,"remarks":"","location":{"longitude":104.080986,"latitude":30.657688},"ischecked":true,"distance":25631,"sort":7,"interval":4223}];
         }
     },
     mounted() {

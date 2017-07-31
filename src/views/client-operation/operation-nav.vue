@@ -386,7 +386,6 @@ export default {
 			let self = this;
 
 			if(n == self.choseList.length){
-				
 				self.countComplete = 0;
 				self.distributionEstimation();
 				let postItems = [],postAllDistance=0,postAllTime=0;

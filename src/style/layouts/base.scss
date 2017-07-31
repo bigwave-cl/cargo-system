@@ -14,7 +14,9 @@ body {
     background: $cgm-bg-color-2;
     -webkit-touch-callout: none;
 }
-
+label{
+    margin: 0;
+}
 a,
 a:hover,
 a:focus {
